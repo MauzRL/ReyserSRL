@@ -10,15 +10,21 @@
 }
 
 :root {
-    --textColor_primary: #1b1b1b;
-    --textColor_secondary: #575757;
-    --textColor_tertiary: #f5f5f5;
-    --mainColor_primary: #f3a700ff ;
-    --mainColor_secondary: #000e6e ;
+    --text-color_primary: #1b1b1b;
+    --text-color_secondary: #575757;
+    --text-color_tertiary: #2e2e2e;
+
+    --main-color_primary: #497174 ;
+    --main-color_secondary: #D6E4E5 ;
+    --main-color_tertiary: #EB6440 ;
+
 
     --lowText_fontSize: 16px;
-    --text_titleSize: 40px;
-    --text_titleCard: 24px;
+    --text_title-size: 40px;
+    --text_title-card: 24px; 
+    --text_title-card2: 20px;
+    --text_paragraph: 16px; 
+    --box-shadow_primary: 0 6px 50px -20px rgba(0,0,0,0.2);
 
 }
 
@@ -31,7 +37,7 @@ header {
     z-index: 100;
 }
 
-.container__header {
+.container_header {
     max-width: 1200px;
     height: 100%;
     margin: auto;
@@ -74,10 +80,10 @@ header {
 }
 
 .menu nav ul li a {
-    color: #000;   /* Variable */
-    font-size: 16px; /* Variable */
+    color: var(--text-color_primary);
+    font-size: var(--lowText_fontSize);
 
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    background-image: linear-gradient( var(--text-color_primary), var(--text-color_primary));
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -93,4 +99,41 @@ header {
 
 /* Cover */
 
+.container_cover {
+    padding: 100px 0 50px 0;
+    background: var(--main-color_secondary);
+
+}
+
+.cover {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.text_cover {
+    width: 100%;
+    padding-right: 50px ;
+
+}
+
+.text_cover h1 {
+    font-size: 50px;
+    
+}
+
+.text_cover p {
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--text-color_tertiary);
+
+}
+
+.img_cover img {
+    height: 700px;
+    
+}
 
