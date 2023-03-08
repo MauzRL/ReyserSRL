@@ -137,3 +137,67 @@ header {
     
 }
 
+
+/* General Cards Styles */
+
+.container_card-primary {
+    padding-top: 100px;
+}
+
+.card_primary {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_card-primary {
+    max-width: 800px;
+    margin: auto;
+}
+
+.text_card-primary p {
+    color: var(--main-color_tertiary);
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.text_card-primary h2 {
+    font-size: var(--text_title-size);
+    font-weight: 600;
+    color: var(--text-color_primary);
+}
+
+.container_box-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box_card {
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+
+}
+
+.box_card:hover {
+    border: 1px solid transparent;
+    box-shadow: var(--box-shadow_primary);
+}
+
+.box_card h3 {
+    font-size: var(--text_title-card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box_card p {
+    margin-top: 20px;
+}
+
