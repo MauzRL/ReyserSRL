@@ -140,30 +140,30 @@ header {
 
 /* General Cards Styles */
 
-.container_card-primary {
+.container_card {
     padding-top: 100px;
 }
 
-.card_primary {
+.title{
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 20px;
 }
 
-.text_card-primary {
+.text_card{
     max-width: 800px;
     margin: auto;
 }
 
-.text_card-primary p {
+.title-text p {
     color: var(--main-color_tertiary);
     font-size: var(--text_paragraph);
     font-weight: 500;
     letter-spacing: 4px;
 }
 
-.text_card-primary h2 {
+.title-text h2 {
     font-size: var(--text_title-size);
     font-weight: 600;
     color: var(--text-color_primary);
@@ -199,5 +199,20 @@ header {
 
 .box_card p {
     margin-top: 20px;
+}
+
+
+/* About Us */
+
+.container_about {
+    padding: 100px 0;
+    background-color: var(--main-color_secondary);
+    margin-top: 100px;
+
+}
+
+.about {
+    max-width: 1200px;
+    margin: auto;
 }
 
