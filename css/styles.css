@@ -11,12 +11,14 @@
 
 :root {
     --text-color_primary: #1b1b1b;
-    --text-color_secondary: #575757;
-    --text-color_tertiary: #2e2e2e;
+    --text-color_secondary: #FF6E31;
+    --text-color_tertiary: #f5f5f5;
 
-    --main-color_primary: #497174 ;
-    --main-color_secondary: #D6E4E5 ;
-    --main-color_tertiary: #EB6440 ;
+    --main-color_primary: #243763 ;
+    --main-color_secondary: #FF6E31 ;
+    --main-color_tertiary: #FEDE00 ;
+    --main-color_cuartary: #89aaff ;
+
 
 
     --lowText_fontSize: 16px;
@@ -97,11 +99,18 @@ header {
 
 }
 
-/* Cover */
+/* Cover 
+background-image: url(../img/manos-trigo.jpg);
+    max-width: 100%;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position: center;
+*/
 
 .container_cover {
     padding: 100px 0 50px 0;
-    background: var(--main-color_secondary);
+    background-color: var(--main-color_cuartary);
+    
 
 }
 
@@ -111,6 +120,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0 20px;
+    height: 600px;
 
 }
 
@@ -122,6 +132,7 @@ header {
 
 .text_cover h1 {
     font-size: 50px;
+    color: var(--text-color_tertiary)
     
 }
 
@@ -151,16 +162,14 @@ header {
     padding: 0px 20px;
 }
 
-.text_card{
-    max-width: 800px;
-    margin: auto;
-}
+
 
 .title-text p {
-    color: var(--main-color_tertiary);
+    color: var(--main-color_secondary);
     font-size: var(--text_paragraph);
     font-weight: 500;
     letter-spacing: 4px;
+    margin-bottom: 10px ;
 }
 
 .title-text h2 {
@@ -206,7 +215,7 @@ header {
 
 .container_about {
     padding: 100px 0;
-    background-color: var(--main-color_secondary);
+    background-color: #e1eaff;
     margin-top: 100px;
 
 }
@@ -214,5 +223,93 @@ header {
 .about {
     max-width: 1200px;
     margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+.text_about {
+    padding-right: 40px;
+    width: 100%;
+
+}
+
+.text_about h2 {
+    color: var(--text-color_primary);
+    font-weight: 600;
+    font-size: var(--text_title-size);
+}
+
+.text_about p {
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--text-color_primary);
+}
+
+.img_about {
+    width: 100%;
+    display: flex;
+}
+
+.img_about img {
+    width: 600px;
+}
+
+/* shedule */
+
+.doble {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Contact Card */
+
+.contact_card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 400px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.contact_card div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.contact_card .front {
+    background-color: var(--main-color_primary);
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.contact_card .back {
+    background-color: var(--main-color_primary);
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.contact_card:hover .front {
+    
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.contact_card:hover .back {
+    
+    transform: perspective(1000px) rotateY(360deg);
+}
+
+
+
 
