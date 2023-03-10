@@ -277,6 +277,7 @@ background-image: url(../img/manos-trigo.jpg);
     height: 400px;
     max-width: 1200px;
     margin: 30px auto;
+
 }
 
 .contact_card div {
@@ -288,24 +289,25 @@ background-image: url(../img/manos-trigo.jpg);
     justify-content: center;
     backface-visibility: hidden;
     transition: 1s;
+    background-color: var(--main-color_primary);
+
 }
 
-.contact_card .front {
-    background-color: var(--main-color_primary);
+
+.contact_card .front.show {
     transform: perspective(1000px) rotateY(0deg);
 }
 
-.contact_card .back {
-    background-color: var(--main-color_primary);
+.contact_card .back.hide {
     transform: perspective(1000px) rotateY(180deg);
 }
 
-.contact_card:hover .front {
+.contact_card .front.hide {
     
     transform: perspective(1000px) rotateY(180deg);
 }
 
-.contact_card:hover .back {
+.contact_card .back.show {
     
     transform: perspective(1000px) rotateY(360deg);
 }
