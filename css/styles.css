@@ -280,7 +280,7 @@ background-image: url(../img/manos-trigo.jpg);
 
 }
 
-.contact_card div {
+.contact_card .front, .contact_card .back{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -289,9 +289,14 @@ background-image: url(../img/manos-trigo.jpg);
     justify-content: center;
     backface-visibility: hidden;
     transition: 1s;
-    background-color: var(--main-color_primary);
+    background-color: #fae7af;
+    border-radius: 30px;
+    box-shadow: #e0e0e0 5px 5px 40px;
+    cursor: pointer;
 
 }
+
+
 
 
 .contact_card .front.show {
@@ -311,6 +316,61 @@ background-image: url(../img/manos-trigo.jpg);
     
     transform: perspective(1000px) rotateY(360deg);
 }
+
+.contact_img {
+    position: absolute;
+    
+}
+
+.contact_img img {
+    height: 250px;
+}
+
+.contact_text {
+    position: absolute;
+    bottom: 50px;
+    font-size: var(--text_title-card2);
+}
+
+.contact_text h3 {
+    font-size: var(--text_title-card2);
+    color: var(--text-color_primary);
+    font-weight: 500;
+}
+
+.container_back {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.container_back div {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container_back div i {
+    font-size: 50px;
+}
+
+.container_back div p {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.back img {
+    position: absolute;
+    height: 250px;
+    z-index: -10;
+    right: 20px;
+}
+
+
+
 
 
 
