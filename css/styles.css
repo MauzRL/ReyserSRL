@@ -126,6 +126,7 @@ background-image: url(../img/manos-trigo.jpg);
     max-width: 1200px;
     margin: auto;
     display: flex;
+    
     align-items: center;
     padding: 0 20px;
     height: 600px;
@@ -152,8 +153,7 @@ background-image: url(../img/manos-trigo.jpg);
 }
 
 .img_cover img {
-    height: 700px;
-    
+    max-height: 400px;    
 }
 
 
@@ -269,10 +269,20 @@ background-image: url(../img/manos-trigo.jpg);
 
 .doble {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1200px;
     margin: auto;
+
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
+
+.horarios p {
+    padding-top: 20px;
+
+}
+
+
 
 /* Contact Card */
 
@@ -438,8 +448,47 @@ footer {
 
 }
 
+@media screen and (max-width: 1200px) {
+   .cover {
+    max-width: 90%;
+    height: 500px;
+   }
+   .img_cover img {
+    max-width: 500px;
+   }
 
+   .text_cover h1 {
+    font-size: 45px;
+   }
 
+   .text_cover p {
+    font-size: 14px;
+   }
+
+}
+
+@media screen and (max-width: 960px) {
+    .cover {
+        height: 450px;
+    }
+
+    .img_cover img {
+        max-width: 400px;
+    }
+
+    .text_cover h1 {
+        font-size: 40px;
+    }
+
+    .text_cover p {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
 
 
 
